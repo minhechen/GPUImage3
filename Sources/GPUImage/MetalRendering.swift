@@ -4,7 +4,7 @@ import Metal
 // OpenGL uses a bottom-left origin while Metal uses a top-left origin.
 public let standardImageVertices: [Float] = [-1.0, 1.0, 1.0, 1.0, -1.0, -1.0, 1.0, -1.0]
 
-extension MTLCommandBuffer {
+public extension MTLCommandBuffer {
     func clear(with color: Color, outputTexture: Texture) {
         let renderPass = MTLRenderPassDescriptor()
         renderPass.colorAttachments[0].texture = outputTexture.texture
