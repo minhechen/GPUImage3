@@ -71,7 +71,7 @@ public extension MTLCommandBuffer {
     }
 }
 
-func generateRenderPipelineState(
+public func generateRenderPipelineState(
     device: MetalRenderingDevice, vertexFunctionName: String, fragmentFunctionName: String,
     operationName: String
 ) -> (MTLRenderPipelineState, [String: (Int, MTLStructMember)], Int) {
